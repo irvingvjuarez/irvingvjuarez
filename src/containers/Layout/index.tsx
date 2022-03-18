@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { SidebarButton } from "../../components/SidebarButton";
 
 import Logo from "../../assets/images/logo.png";
@@ -6,6 +6,9 @@ import DoubleArrow from "../../assets/icons/double-arrow.svg";
 import Envelope from "../../assets/icons/envelope.svg";
 
 const Layout: React.FC = ({ children }): JSX.Element => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
+  const handleToggle = () => setIsSidebarOpen(prev => !prev)
+
   return(
     <Fragment>
       <header className="header">
@@ -14,7 +17,7 @@ const Layout: React.FC = ({ children }): JSX.Element => {
             <img src={Logo} alt="" />
           </button>
 
-          <button className="header__logo--arrows">
+          <button className="header__logo--arrows" onClick={handleToggle}>
             <img src={DoubleArrow} alt="" />
           </button>
 
@@ -41,7 +44,7 @@ const Layout: React.FC = ({ children }): JSX.Element => {
       </header>
 
       <main className="main">
-        <section className="main__sidebar">
+        <section className={`main__sidebar ${isSidebarOpen && "open"}`}>
           <div>
 
             <SidebarButton>
@@ -99,7 +102,7 @@ const Layout: React.FC = ({ children }): JSX.Element => {
           </div>
         </section>
 
-        <section>
+        <section className="main__page">
           {children}
         </section>
       </main>
