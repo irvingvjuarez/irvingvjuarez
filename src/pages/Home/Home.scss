@@ -1,0 +1,38 @@
+.home{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+
+  &__name{
+    margin-bottom: 20px;
+  }
+
+  &__content{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__subtitle{
+    @include subtitle;
+    display: block;
+  }
+
+  & h2{
+    @include title;
+  }
+
+  & &__brief{
+    color: $border-color;
+    margin-bottom: 15px;
+  }
+
+  & &__description{
+    @include subtitle;
+    color: $border-color;
+  }
+
+  &__subtitle, &__description{
+    margin-bottom: 30px;
+  }
+}

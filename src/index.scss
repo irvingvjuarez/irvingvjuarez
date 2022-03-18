@@ -35,5 +35,20 @@ $terceary-font: 'Fira Code', monospace;
   }
 }
 
+@mixin subtitle{
+  color: $contrast-color;
+  font-family: $terceary-font;
+  font-size: 20px;
+}
+
+@mixin title{
+  color: $default-color;
+  font-family: $primary-font;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
 @import "./containers/Layout/Layout.scss";
 @import "./components/SidebarButton/SidebarButton.scss";
+@import "./pages/Home/Home.scss";
