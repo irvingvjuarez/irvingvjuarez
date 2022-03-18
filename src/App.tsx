@@ -21,7 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <ctx.Provider value={state}>
-        <Layout>
+        <Layout dispatch={dispatch}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
