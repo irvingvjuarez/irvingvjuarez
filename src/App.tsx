@@ -10,22 +10,30 @@ import { User } from "./pages/User";
 
 import { Layout } from "./containers/Layout";
 import './App.scss';
+import { useReducer } from "react";
+
+import { reducerFn, initialState } from "./reducer";
+import { ctx } from "./context";
 
 function App() {
+  const [state, dispatch] = useReducer(reducerFn, initialState);
+
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/github" element={<Github />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/user" element={<User />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
+      <ctx.Provider value={state}>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/github" element={<Github />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/user" element={<User />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Layout>
+      </ctx.Provider>
     </BrowserRouter>
   );
 }
