@@ -7,10 +7,25 @@
   place-content: center;
   cursor: pointer;
 
+  &.selected {
+
+    svg{
+      fill: $default-color;
+    }
+
+    svg.stroke{
+      stroke: $default-color;
+    }
+
+    span{
+      background-color: $contrast-color;
+    }
+  }
+
   &__bar{
     position: absolute;
     left: 3px;
-    width: 2px;
+    width: 3px;
     height: 100%;
     background-color: $sidebar-color;
   }

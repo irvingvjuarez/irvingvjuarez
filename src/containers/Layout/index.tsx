@@ -1,23 +1,18 @@
-import { Fragment, useContext, useState } from "react";
+import { Fragment, useState } from "react";
 import { SidebarButton } from "../../components/SidebarButton";
 
 import Logo from "../../assets/images/logo.png";
 import DoubleArrow from "../../assets/icons/double-arrow.svg";
-import Envelope from "../../assets/icons/envelope.svg";
-import { ActionInterface, StateInterface } from "../../globalTypes";
-import { ctx } from "../../context";
+import { ActionInterface } from "../../globalTypes";
 
 interface LayoutProps{
   dispatch: React.Dispatch<ActionInterface>
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, dispatch }): JSX.Element => {
-  const state: StateInterface = useContext(ctx) as StateInterface
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false)
   const handleToggle = () => setIsSidebarOpen(prev => !prev)
   const handleRouting = (route: string) => dispatch({ type: "ROUTE", payload: route })
-
-  console.log(state.current)
 
   return(
     <Fragment>

@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { ctx } from "../../context";
+import { StateInterface } from "../../globalTypes";
 
 interface SidebarButtonProps {
   route: string;
@@ -7,14 +10,16 @@ interface SidebarButtonProps {
 
 const SidebarButton: React.FC<SidebarButtonProps> = ({ children, route, onclick }): JSX.Element => {
   const navigate = useNavigate()
-  route = route === "/" ? "" : route;
+  const state: StateInterface = useContext(ctx) as StateInterface
+  const to: string = route === "/" ? "" : route
+  const newRoute: string = route === "/" ? "root" : route
   const handleClick = () => {
-    navigate(`/${route}`)
-    onclick(route === "" ? "root" : route)
+    navigate(`/${to}`)
+    onclick(newRoute)
   }
 
   return(
-    <button className="sidebar-btn" title="" onClick={handleClick}>
+    <button className={`sidebar-btn ${newRoute === state.current && "selected"}`} title="" onClick={handleClick}>
       <span className="sidebar-btn__bar"></span>
 
       {children}
