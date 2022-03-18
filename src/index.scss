@@ -39,6 +39,10 @@ $terceary-font: 'Fira Code', monospace;
   color: $contrast-color;
   font-family: $terceary-font;
   font-size: 20px;
+
+  @media screen and (min-width: 500px){
+    font-size: 23px;
+  }
 }
 
 @mixin title{
@@ -47,6 +51,22 @@ $terceary-font: 'Fira Code', monospace;
   font-weight: 900;
   font-size: 30px;
   letter-spacing: 1px;
+
+  @media screen and (min-width: 500px){
+    font-size: 33px;
+  }
+}
+
+@mixin cta{
+  @include reset-button;
+  padding: 12px;
+  border: 2px solid $contrast-color;
+  color: $contrast-color;
+  font-size: 17px;
+
+  @media screen and (min-width: 500px){
+    font-size: 20px;
+  }
 }
 
 @import "./containers/Layout/Layout.scss";
