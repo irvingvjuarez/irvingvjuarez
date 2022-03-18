@@ -78,8 +78,17 @@
   display: flex;
   height: calc(100vh - 41px);
   background-color: $bg-clear-color;
+  transform: translateX(-65px);
+  transition: transform 0.5s;
+  width: calc(100vw + 65px);
 
-  // &__page{}
+  &.open{
+    transform: translateX(0);
+  }
+
+  &__page{
+    width: calc(100vw - 65px);
+  }
 
   &__sidebar{
     width: 65px;
@@ -88,16 +97,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: $sidebar-color;
-    transform: translateX(-100%);
-    transition: transform 0.5s;
 
     div{
       width: 100%;
     }
-  }
-
-  &__sidebar.open{
-    transform: translateX(0);
   }
 }
 
@@ -126,10 +129,8 @@
 
   .main{
     height: calc(100vh - 71px);
-
-    &__sidebar{
-      transform: translateX(0);
-    }
+    transform: translateX(0);
+    width: initial;
   }
 
   .footer{

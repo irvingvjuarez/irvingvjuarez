@@ -16,6 +16,10 @@ $terceary-font: 'Fira Code', monospace;
   box-sizing: border-box;
 }
 
+#root{
+  overflow: hidden;
+}
+
 @mixin reset-button {
   border: none;
   background-color: transparent;

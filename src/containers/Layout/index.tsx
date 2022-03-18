@@ -43,8 +43,8 @@ const Layout: React.FC = ({ children }): JSX.Element => {
         </div>
       </header>
 
-      <main className="main">
-        <section className={`main__sidebar ${isSidebarOpen && "open"}`}>
+      <main className={`main ${isSidebarOpen && "open"}`}>
+        <section className="main__sidebar">
           <div>
 
             <SidebarButton>
