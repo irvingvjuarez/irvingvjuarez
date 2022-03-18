@@ -1,0 +1,163 @@
+.header{
+  background-color: $bg-dark-color;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+
+  &__file-title{
+    display: none;
+    color: $default-color;
+    font-family: $secondary-font;
+  }
+
+  &__window-btns {
+    display: none;
+
+    button{
+      @include reset-button;
+      display: block;
+      width: 15px;
+      height: 15px;
+      margin: 0 3px;
+      border-radius: 50%;
+
+      &:nth-child(1){
+        background-color: #23ff23;
+      }
+      &:nth-child(2){
+        background-color: yellow;
+      }
+      &:nth-child(3){
+        background-color: red;
+      }
+    }
+  }
+
+  &__navbar{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+
+    button{
+      @include reset-button;
+      margin-right: 12px;
+      cursor: pointer;
+    }
+
+    button.header__logo--arrows img{
+      width: 21px;
+    }
+  }
+
+  &__menu{
+    list-style: none;
+    display: none;
+    color: $default-color;
+    font-family: $secondary-font;
+    height: 100%;
+
+    li{
+      padding: 0 10px;
+      font-size: 18px;
+      height: inherit;
+      display: flex;
+      align-items: center;
+      cursor: default;
+
+      &:hover{
+        background-color: $bg-clear-color;
+      }
+    }
+  }
+}
+
+.main{
+  display: flex;
+  height: calc(100vh - 41px);
+
+  &__sidebar{
+    width: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $sidebar-color;
+
+    div{
+      width: 100%;
+    }
+  }
+}
+
+.footer{
+  display: none;
+}
+
+@media screen and (min-width: 850px){
+  .header{
+    &__logo--arrows{
+      display: none;
+    }
+
+    &__menu{
+      display: flex;
+    }
+
+    &__file-title{
+      display: initial;
+    }
+
+    &__window-btns{
+      display: flex;
+    }
+  }
+
+  .main{
+    height: calc(100vh - 71px);
+  }
+
+  .footer{
+    display: block;
+    height: 30px;
+    background-color: $footer-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    color: $default-color;
+    font-family: $secondary-font;
+
+    &__article:hover{
+      @include footer-hover;
+    }
+
+    &__section{
+      height: 100%;
+      display: flex;
+      cursor: default;
+
+      &:nth-child(1):hover{
+        @include footer-hover;
+      }
+
+      article{
+        height: inherit;
+        padding: 0 8px;
+        display: flex;
+        align-items: center;
+      }
+
+      p{
+        margin: 5px;
+      }
+
+      svg{
+        width: 22px;
+        fill: $default-color;
+      }
+    }
+  }
+}

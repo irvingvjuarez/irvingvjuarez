@@ -4,6 +4,7 @@ $bg-dark-color: #201F3D;
 $footer-color: #007ACC;
 $bg-clear-color: #2F2C58;
 $default-color: white;
+$sidebar-color: #292950;
 
 $primary-font: 'JetBrains Mono', monospace;
 $secondary-font: 'Source Sans Pro', sans-serif;
@@ -14,3 +15,21 @@ $terceary-font: 'Fira Code', monospace;
   padding: 0;
   box-sizing: border-box;
 }
+
+@mixin reset-button {
+  border: none;
+  background-color: transparent;
+}
+
+@mixin footer-hover{
+  opacity: 0.5;
+  background-color: $default-color;
+  color: $bg-dark-color;
+
+  svg{
+    fill: $bg-dark-color;
+  }
+}
+
+@import "./containers/Layout/Layout.scss";
+@import "./components/SidebarButton/SidebarButton.scss";

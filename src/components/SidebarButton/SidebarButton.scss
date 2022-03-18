@@ -1,0 +1,34 @@
+.sidebar-btn{
+  @include reset-button;
+  position: relative;
+  width: 100%;
+  height: 65px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+
+  &__bar{
+    position: absolute;
+    left: 3px;
+    width: 2px;
+    height: 100%;
+    background-color: $sidebar-color;
+  }
+
+  &:hover svg{
+    fill: $default-color;
+  }
+  &:hover svg.stroke{
+    stroke: $default-color;
+  }
+
+  svg{
+    width: 36px;
+    fill: $border-color;
+  }
+
+  svg.stroke{
+    fill: none;
+    stroke: $border-color;
+  }
+}
