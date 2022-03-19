@@ -1,22 +1,17 @@
 import { useContext } from "react"
 import { ctx } from "../../context"
-
-import Blog from "../../assets/images/blog.png";
-import Contact from "../../assets/images/contact.png";
-import Github from "../../assets/images/github.png";
-import Projects from "../../assets/images/projects.png";
-import Root from "../../assets/images/root.png";
-import Settings from "../../assets/images/settings.png";
-import User from "../../assets/images/user.png";
+import { StateInterface } from "../../globalTypes";
+import { getCurrentInfo } from "./utils";
 
 const Tabs: React.FC = (): JSX.Element => {
-  const state = useContext(ctx)
+  const state = useContext(ctx) as StateInterface;
+  const data = getCurrentInfo(state);
 
   return(
     <section className="tabs">
       <article>
-        <img src={Blog} alt={state?.current} />
-        <p>{`${state?.current}.js`}</p>
+        <img src={data.image} alt={state?.current} />
+        <p>{`${state?.current}.${data.extension}`}</p>
 
         <hr />
       </article>

@@ -12,7 +12,7 @@ const SidebarButton: React.FC<SidebarButtonProps> = ({ children, route, onclick 
   const navigate = useNavigate()
   const state: StateInterface = useContext(ctx) as StateInterface
   const to: string = route === "/" ? "" : route
-  const newRoute: string = route === "/" ? "root" : route
+  const newRoute: string = route === "/" ? "home" : route
   const handleClick = () => {
     navigate(`/${to}`)
     onclick(newRoute)
