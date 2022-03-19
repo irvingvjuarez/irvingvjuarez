@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
 import { SidebarButton } from "../../components/SidebarButton";
+import { Tabs } from "../../containers/Tabs";
 
 import Logo from "../../assets/images/logo.png";
 import DoubleArrow from "../../assets/icons/double-arrow.svg";
@@ -108,6 +109,8 @@ const Layout: React.FC<LayoutProps> = ({ children, dispatch }): JSX.Element => {
         </section>
 
         <section className="main__page">
+          <Tabs />
+
           {children}
         </section>
       </main>

@@ -70,5 +70,7 @@ $terceary-font: 'Fira Code', monospace;
 }
 
 @import "./containers/Layout/Layout.scss";
+@import "./containers/Tabs/Tabs.scss";
+
 @import "./components/SidebarButton/SidebarButton.scss";
 @import "./pages/Home/Home.scss";
