@@ -1,0 +1,16 @@
+.github{
+  padding-top: 35px;
+
+  &__header{
+
+    &--profile img{
+      width: 20px;
+      height: 20px;
+    }
+
+    &--company svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
