@@ -1,16 +1,56 @@
 .github{
-  padding-top: 35px;
+  &__wrapper{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 35px;
+  }
 
   &__header{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    cursor: pointer;
+
+    &:hover{
+      border-bottom: 2px solid $contrast-color;
+    }
+
+    & span{
+      font-family: $terceary-font;
+    }
+
+    &--profile{
+      display: flex;
+      align-items: center;
+      border-right: 1px solid $default-color;
+      min-width: 222px;
+      padding-block: 5px;
+      margin-right: 20px;
+    }
 
     &--profile img{
-      width: 20px;
-      height: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    &--profile h2{
+      font-family: $secondary-font;
+      margin-bottom: 5px;
+    }
+
+    &--company{
+      display: flex;
+      align-items: center;
+      padding-block: 10px;
     }
 
     &--company svg{
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      fill: $default-color;
     }
   }
 }
