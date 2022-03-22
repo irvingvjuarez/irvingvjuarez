@@ -1,5 +1,7 @@
 import Avatar from "../../assets/images/avatar7.jpg";
 
+import { RepoCard } from "../../components/RepoCard";
+
 const Github: React.FC = (): JSX.Element => {
   return(
     <article className="github">
@@ -36,7 +38,9 @@ const Github: React.FC = (): JSX.Element => {
           </div>
         </a>
 
-        <article className="github__content"></article>
+        <article className="github__content">
+          <RepoCard />
+        </article>
       </section>
     </article>
   )
