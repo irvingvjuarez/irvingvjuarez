@@ -6,12 +6,15 @@ const Github: React.FC = (): JSX.Element => {
       <section className="github__wrapper">
 
         <a className="github__header">
+          <hr className="github__header--bar"/>
+
           <div className="github__header--profile">
             <img src={Avatar} alt="" />
             <div>
               <h2>Irving Juárez</h2>
               <span>@irvingvjuarez</span>
             </div>
+
           </div>
 
           <div className="github__header--company">

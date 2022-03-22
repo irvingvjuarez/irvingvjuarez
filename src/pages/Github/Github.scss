@@ -6,13 +6,23 @@
   }
 
   &__header{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: fit-content;
     cursor: pointer;
 
-    &:hover{
-      border-bottom: 2px solid $contrast-color;
+    &--bar{
+      position: absolute;
+      bottom: -9px;
+      width: 100%;
+      left: 0;
+      border-color: transparent;
+      transition: border-color 0.5s;
+    }
+    
+    &:hover hr{
+      border-color: $contrast-color;
     }
 
     & span{
