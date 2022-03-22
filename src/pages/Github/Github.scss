@@ -1,8 +1,14 @@
 .github{
   &__wrapper{
     width: 90%;
-    margin: 0 auto;
-    padding-top: 35px;
+    margin: 35px auto;
+  }
+
+  &__content{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   &__header{
@@ -61,6 +67,22 @@
       height: 30px;
       margin-right: 10px;
       fill: $default-color;
+    }
+  }
+
+  @media screen and (min-width: 735px){
+    &__wrapper{
+      margin: 35px auto 70px auto;
+    }
+
+    &__content{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1060px){
+    &__content{
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

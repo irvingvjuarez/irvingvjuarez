@@ -91,8 +91,10 @@
 
     & > article{
       max-width: 1200px;
+      max-height: calc(100vh - 76px);
       margin: 0 auto;
       color: $default-color;
+      overflow-y: auto;
     }
   }
 
@@ -140,6 +142,8 @@
   }
 
   .footer{
+    position: relative;
+    z-index: 1;
     display: block;
     height: 30px;
     background-color: $footer-color;
