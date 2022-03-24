@@ -1,0 +1,25 @@
+.blog-card{
+  background-color: $bg-dark-color;
+  
+  &__thumbnail{
+    width: 100%;
+    height: 170px;
+    background-color: $border-color;
+  }
+  
+  &__content{
+    background-color: $bg-dark-color;
+    padding: 12px;
+    border-radius: 9px;
+
+    p{
+      font-size: 19px;
+    }
+  }
+
+  @media screen and (min-width: 380px){
+    &__content{
+      @include card;
+    }
+  }
+}

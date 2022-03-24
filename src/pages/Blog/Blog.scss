@@ -2,5 +2,9 @@
   &__wrapper{
     @include wrapper;
     font-family: $secondary-font;
+
+    & > h2{
+      margin-bottom: 20px;
+    }
   }
 }
