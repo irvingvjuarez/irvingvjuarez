@@ -8,4 +8,16 @@
       margin-bottom: 20px;
     }
   }
+
+  &__cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 850px){
+    &__wrapper{
+      margin: 35px auto 70px auto;
+    }
+  }
 }

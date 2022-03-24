@@ -9,6 +9,7 @@ const Projects: React.FC = (): JSX.Element => {
 
         <section className="projects__cards">
           <ProjectCard />
+          <ProjectCard />
         </section>
       </section>
     </article>
