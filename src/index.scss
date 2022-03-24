@@ -69,11 +69,28 @@ $terceary-font: 'Fira Code', monospace;
   }
 }
 
+@mixin scrollDown {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $default-color;
+    border-radius: 9px;
+  }
+}
+
 @import "./containers/Layout/Layout.scss";
 @import "./containers/Tabs/Tabs.scss";
 
 @import "./components/SidebarButton/SidebarButton.scss";
 @import "./components/RepoCard/RepoCard.scss";
+@import "./components/ProjectCard/ProjectCard.scss";
 
 @import "./pages/Home/Home.scss";
 @import "./pages/Github/Github.scss";
+@import "./pages/Projects/Projects.scss";

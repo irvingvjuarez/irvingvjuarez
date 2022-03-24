@@ -90,7 +90,8 @@
     width: 100vw;
 
     & > article{
-      max-width: 1200px;
+      @include scrollDown;
+      width: 100%;
       max-height: calc(100vh - 76px);
       margin: 0 auto;
       color: $default-color;

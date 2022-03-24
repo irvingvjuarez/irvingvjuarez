@@ -1,6 +1,14 @@
+import { ProjectCard } from "../../components/ProjectCard";
+
 const Projects: React.FC = (): JSX.Element => {
   return(
-    <h2>I am the Projects page</h2>
+    <article className="projects">
+      <h2>Things I've built.</h2>
+
+      <section className="projects__cards">
+        <ProjectCard />
+      </section>
+    </article>
   )
 }
 

@@ -42,6 +42,9 @@ const Github: React.FC = (): JSX.Element => {
           <RepoCard />
           <RepoCard />
           <RepoCard />
+          <RepoCard />
+          <RepoCard />
+          <RepoCard />
         </article>
       </section>
     </article>
