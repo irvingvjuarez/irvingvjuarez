@@ -1,9 +1,7 @@
 .github{
 
   &__wrapper{
-    width: 90%;
-    max-width: 1200px;
-    margin: 35px auto;
+    @include wrapper;
   }
 
   &__content{

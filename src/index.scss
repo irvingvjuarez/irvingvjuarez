@@ -84,6 +84,24 @@ $terceary-font: 'Fira Code', monospace;
   }
 }
 
+@mixin wrapper{
+  width: 90%;
+  max-width: 1200px;
+  margin: 35px auto;
+}
+
+@mixin card{
+  background-color: $bg-dark-color;
+  padding: 18px 12px;
+  border-radius: 9px;
+}
+
+@mixin highlightedText {
+  display: inline-block;
+  padding: 3px 5px;
+  font-family: $terceary-font;
+}
+
 @import "./containers/Layout/Layout.scss";
 @import "./containers/Tabs/Tabs.scss";
 @import "./containers/Links/Links.scss";

@@ -1,0 +1,11 @@
+.projects{
+
+  &__wrapper{
+    @include wrapper;
+    
+    & > h2{
+      font-family: $secondary-font;
+      margin-bottom: 20px;
+    }
+  }
+}
