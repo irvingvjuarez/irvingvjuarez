@@ -1,0 +1,9 @@
+.tags{
+  text-align: end;
+  margin-bottom: 15px;
+
+  span{
+    @include highlightedText;
+    color: $border-color;
+  }
+}

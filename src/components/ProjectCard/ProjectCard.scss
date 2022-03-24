@@ -39,16 +39,6 @@
     }
   }
 
-  &__tags{
-    text-align: end;
-    margin-bottom: 15px;
-
-    span{
-      @include highlightedText;
-      color: $border-color;
-    }
-  }
-
   &__links{
     display: flex;
     justify-content: flex-end;

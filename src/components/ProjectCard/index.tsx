@@ -1,4 +1,5 @@
 import { Links } from "../../containers/Links";
+import { Tags } from "../../containers/Tags";
 
 const ProjectCard: React.FC = (): JSX.Element => {
   return(
@@ -19,11 +20,7 @@ const ProjectCard: React.FC = (): JSX.Element => {
           </ul>
         </div>
 
-        <div className="project-card__tags">
-          <span>TypeScript</span>
-          <span>Next.js</span>
-          <span>Auth0</span>
-        </div>
+        <Tags />
 
         <div className="project-card__links">
           <Links />

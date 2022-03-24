@@ -105,11 +105,14 @@ $terceary-font: 'Fira Code', monospace;
 @import "./containers/Layout/Layout.scss";
 @import "./containers/Tabs/Tabs.scss";
 @import "./containers/Links/Links.scss";
+@import "./containers/Tags/Tags.scss";
 
 @import "./components/SidebarButton/SidebarButton.scss";
 @import "./components/RepoCard/RepoCard.scss";
 @import "./components/ProjectCard/ProjectCard.scss";
+@import "./components/BlogCard/BlogCard.scss";
 
 @import "./pages/Home/Home.scss";
 @import "./pages/Github/Github.scss";
 @import "./pages/Projects/Projects.scss";
+@import "./pages/Blog/Blog.scss";
