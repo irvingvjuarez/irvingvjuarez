@@ -1,6 +1,14 @@
 const NotFound = () => {
   return(
-    <h2>I am the 404 Error page</h2>
+    <article className="not-found">
+
+      <section className="not-found__wrapper">
+
+        <h2>404 Error.</h2>
+        <p>Page not found.</p>
+        
+      </section>
+    </article>
   )
 }
 

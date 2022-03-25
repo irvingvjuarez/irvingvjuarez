@@ -1,6 +1,10 @@
 const User: React.FC = (): JSX.Element => {
   return(
-    <h2>I am the User page</h2>
+    <article className="user">
+      <section className="user__wrapper">
+        <h2>In progress...</h2>
+      </section>
+    </article>
   )
 }
 

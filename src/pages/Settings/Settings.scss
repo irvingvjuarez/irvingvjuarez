@@ -1,0 +1,6 @@
+.settings{
+  &__wrapper{
+    @include wrapper;
+    font-family: $secondary-font;
+  }
+}

@@ -1,6 +1,10 @@
 const Settings: React.FC = (): JSX.Element => {
   return(
-    <h2>I am the Settings page</h2>
+    <article className="settings">
+      <section className="settings__wrapper">
+        <h2>In progress...</h2>
+      </section>
+    </article>
   )
 }
 
