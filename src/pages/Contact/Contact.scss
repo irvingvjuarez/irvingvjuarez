@@ -1,0 +1,80 @@
+.contact{
+
+  span{
+    @include highlightedText;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    color: $contrast-color;
+
+    a{
+      color: $contrast-color;
+    }
+  }
+
+  button{
+    @include cta;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    svg{
+      fill: $contrast-color;
+      width: 25px;
+      margin-left: 10px;
+    }
+  }
+
+  &__content{
+    @include wrapper;
+    text-align: center;
+  }
+  
+  &__text{
+    h2{
+      font-family: 25px;
+      margin-bottom: 15px;
+    }
+
+    p{
+      font-size: 19px;
+      max-width: 500px;
+      margin: 10px auto;
+    }
+
+    font-family: $secondary-font;
+  }
+
+  &__media{
+    margin-block: 25px;
+
+    a{
+      width: 30px;
+      height: 30px;
+      margin: 0 9px;
+    }
+    img{
+      width: inherit;
+    }
+
+    &--github{
+      display: inline-block;
+      background-color: $default-color;
+      border-radius: 50%;
+    }
+  }
+
+  @media screen and (min-width: 500px){
+    &__text{
+      h2{
+        font-family: 30px;
+      }
+  
+      p{
+        font-size: 22px;
+      }
+    }
+  }
+}
