@@ -88,6 +88,10 @@ $terceary-font: 'Fira Code', monospace;
   width: 90%;
   max-width: 1200px;
   margin: 35px auto;
+
+  @media screen and (min-width: 850px){
+    margin: 35px auto 70px auto;
+  }
 }
 
 @mixin card{
@@ -100,6 +104,21 @@ $terceary-font: 'Fira Code', monospace;
   display: inline-block;
   padding: 3px 5px;
   font-family: $terceary-font;
+}
+
+@mixin grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media screen and (min-width: 735px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 1060px){
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @import "./containers/Layout/Layout.scss";

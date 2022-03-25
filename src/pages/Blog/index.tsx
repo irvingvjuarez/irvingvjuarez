@@ -9,6 +9,11 @@ const Blog: React.FC = (): JSX.Element => {
 
         <section className="blog__cards">
           <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
         </section>
 
       </section>
