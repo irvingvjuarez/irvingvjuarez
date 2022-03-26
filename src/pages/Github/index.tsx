@@ -52,6 +52,10 @@ const Github: React.FC = (): JSX.Element => {
           ))}
         </article>
       </section>
+
+      <a target="_blank" href="https://github.com/irvingvjuarez?tab=repositories" className="github__cta">
+        See All
+      </a>
     </article>
   )
 }

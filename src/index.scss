@@ -102,10 +102,6 @@ $terceary-font: 'Fira Code', monospace;
   width: 90%;
   max-width: 1200px;
   margin: 35px auto;
-
-  @media screen and (min-width: 850px){
-    margin: 35px auto 70px auto;
-  }
 }
 
 @mixin card{

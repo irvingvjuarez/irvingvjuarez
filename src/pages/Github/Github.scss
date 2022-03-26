@@ -1,5 +1,14 @@
 .github{
 
+  &__cta{
+    @include cta;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    letter-spacing: 0.5px;
+    padding: 12px 24px;
+  }
+
   &__wrapper{
     @include wrapper;
   }
