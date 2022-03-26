@@ -22,6 +22,10 @@ const Projects: React.FC = (): JSX.Element => {
           ))}
         </section>
       </section>
+
+      <a href={data.reposUrl} target="_blank" className="projects__cta">
+        See All
+      </a>
     </article>
   )
 }

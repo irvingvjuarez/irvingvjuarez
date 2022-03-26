@@ -44,7 +44,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ status, title, achievements, 
 
       <section className="project-card__thumbnail">
         <a href={online} target="_blank">
-          <img src={img} alt={title} />
+          <img src={img} alt={title} title={title}/>
         </a>
       </section>
     </div>
