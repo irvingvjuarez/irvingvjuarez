@@ -1,13 +1,14 @@
 import Avatar from "../../assets/images/avatar7.jpg";
-
 import { RepoCard } from "../../components/RepoCard";
+
+import { data } from "../../data";
 
 const Github: React.FC = (): JSX.Element => {
   return(
     <article className="github">
       <section className="github__wrapper">
 
-        <a className="github__header">
+        <a className="github__header" href={data.github} target="_blank">
           <hr className="github__header--bar"/>
 
           <div className="github__header--profile">
@@ -34,7 +35,7 @@ const Github: React.FC = (): JSX.Element => {
                 v29.287H81.936C81.936,262.199,81.936,232.912,81.936,232.912z M235.993,262.199h-29.281v-29.287h29.281V262.199z"/>
             </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
             </svg>
-            <span>Lyfbridge</span>
+            <span>{data.currentCompany}</span>
           </div>
         </a>
 

@@ -14,6 +14,8 @@
     flex-wrap: wrap;
     width: fit-content;
     cursor: pointer;
+    color: $default-color;
+    text-decoration: none;
 
     &--bar{
       position: absolute;

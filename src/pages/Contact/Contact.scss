@@ -14,11 +14,14 @@
     }
   }
 
-  button{
+  &__email-cta{
     @include cta;
     display: flex;
     align-items: center;
     margin: 0 auto;
+    width: fit-content;
+    font-family: $secondary-font;
+    text-decoration: none;
 
     svg{
       fill: $contrast-color;
