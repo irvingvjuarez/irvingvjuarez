@@ -23,7 +23,7 @@ function App() {
       <ctx.Provider value={state}>
         <Layout dispatch={dispatch}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home dispatch={dispatch} />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/github" element={<Github />} />

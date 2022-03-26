@@ -1,4 +1,18 @@
-const Home: React.FC = (): JSX.Element => {
+import { useNavigate } from "react-router-dom"
+import { ActionInterface } from "../../globalTypes"
+
+interface HomeProps {
+  dispatch: React.Dispatch<ActionInterface>
+}
+
+const Home: React.FC<HomeProps> = ({ dispatch }): JSX.Element => {
+  const navigate = useNavigate()
+
+  const handleClick = (route: string) => {
+    dispatch({ type: "ROUTE", payload: route })
+    navigate(`/${route}`)
+  }
+
   return(
     <article className="home">
       <section className="home__content">
@@ -13,8 +27,12 @@ const Home: React.FC = (): JSX.Element => {
         </h3>
 
         <div className="home__ctas">
-          <button>View my work.</button>
-          <button>Contact me.</button>
+          <button onClick={() => handleClick("projects")}>
+            View my work.
+          </button>
+          <button onClick={() => handleClick("contact")}>
+            Contact me.
+          </button>
         </div>
       </section>
     </article>
