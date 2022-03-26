@@ -64,6 +64,9 @@ $terceary-font: 'Fira Code', monospace;
   color: $contrast-color;
   font-size: 17px;
   cursor: pointer;
+  width: fit-content;
+  text-decoration: none;
+  font-family: $secondary-font;
   transition: background-color 0.5s;
 
   &:hover{

@@ -40,12 +40,15 @@ const Github: React.FC = (): JSX.Element => {
         </a>
 
         <article className="github__content">
-          <RepoCard />
-          <RepoCard />
-          <RepoCard />
-          <RepoCard />
-          <RepoCard />
-          <RepoCard />
+          {data.repos.map(repo => (
+            <RepoCard 
+              key={repo.id} 
+              title={repo.title}
+              repo={repo.repo}
+              online={repo.online}
+              description={repo.description}
+            />
+          ))}
         </article>
       </section>
     </article>

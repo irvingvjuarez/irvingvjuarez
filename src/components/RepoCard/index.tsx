@@ -1,14 +1,21 @@
 import { Links } from "../../containers/Links"
 
-const RepoCard: React.FC = (): JSX.Element => {
+interface RepoCardProps {
+  title: string;
+  repo: string;
+  online: string;
+  description: string;
+}
+
+const RepoCard: React.FC<RepoCardProps> = ({ title, repo, online, description }): JSX.Element => {
   return(
     <div className="repo-card">
-      <Links />
+      <Links repo={repo} online={online} />
 
       <div className="repo-card__body">
-        <h2>Title of the project</h2>
+        <h2>{title}</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, nulla, saepe non autem dolor placeat vel, illum magni alias rerum cupiditate deleniti neque! Quisquam, aspernatur. Dolor atque esse distinctio iusto?
+          {description}
         </p>
       </div>
 
