@@ -9,6 +9,45 @@ const data = {
   email: "irvingjuarez274@gmail.com",
   currentCompany: "Lyfbridge",
   reposUrl: "https://github.com/irvingvjuarez?tab=repositories",
+  medium: "https://medium.com/@irvingvjuarez",
+  blogposts: [
+    {
+      id: 0,
+      title: "How a computer works?",
+      description: "We (human beings) are constantly looking for better ways to improve our work and activities in the daily basis",
+      tags: ["Computer Science"],
+    },
+    {
+      id: 1,
+      title: "Build a Shopping Cart using React and TypeScript",
+      description: "By the end of this tutorial, you will have the key-concepts to build a Shopping Cart App using React.js with TypeScript.",
+      tags: ["React.js"],
+    },
+    {
+      id: 2,
+      title: "How useful a bachelor’s degree is in 2022?",
+      description: "Obtaining a bachelor’s degree used to be a way for students to stand out from others in a highly competitive job market.",
+      tags: ["Education"],
+    },
+    {
+      id: 3,
+      title: "Critical review of the book that changed my life",
+      description: "This book is about an experiment made by the US government where 2 scientists traveled to the past to meet Jesús of Nazareth.",
+      tags: ["Reading"],
+    },
+    {
+      id: 4,
+      title: "Understanding command line in 6 minutes",
+      description: "The command line ( also known as shell, bash, console or prompt) is a powerful tool able to give orders to the Operating System or applications in our computer without a graphic user interface (GUI).",
+      tags: ["Linux"],
+    },
+    {
+      id: 5,
+      title: "How to install Windows Subsystem for Linux (WSL) in Windows 10?",
+      description: "Windows Subsystem for Linux lets developers run a GNU/Linux environment, including most command-line tools, utilities, and applications directly on Windows",
+      tags: ["Wsl 2"],
+    },
+  ],
   projects: [
     {
       id: 0,

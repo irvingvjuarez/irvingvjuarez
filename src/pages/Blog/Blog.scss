@@ -1,4 +1,11 @@
 .blog{
+  &__cta{
+    @include cta;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
   &__cards{
     @include grid;
   }

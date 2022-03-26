@@ -1,6 +1,12 @@
 .blog-card{
   background-color: $bg-dark-color;
   
+  &__description {
+    h2{
+      margin-bottom: 9px;
+    }
+  }
+
   &__thumbnail{
     width: 100%;
     height: 170px;
