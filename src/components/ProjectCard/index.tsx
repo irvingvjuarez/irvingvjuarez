@@ -1,29 +1,40 @@
 import { Links } from "../../containers/Links";
 import { Tags } from "../../containers/Tags";
 
-const ProjectCard: React.FC = (): JSX.Element => {
+interface ProjectCardProps {
+  status: string;
+  title: string;
+  achievements: Array<string>;
+  technologies: Array<string>;
+  repo: string;
+  online: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ status, title, achievements, technologies, repo, online }): JSX.Element => {
   return(
     <div className="project-card">
 
       <section className="project-card__info">
         <div className="project-card__header">
-          <span>Featured project</span>
+          <span>{status}</span>
         </div>
 
         <div className="project-card__content">
-          <h2>Get Hired Code Tracker</h2>
+          <h2>{title}</h2>
           <ul>
-            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Odio totam mollitia tempore. Ad, nulla sequi. Deserunt, officiis.</li>
-            <li>Quas ducimus officia quibusdam nulla ad maxime non porro libero rerum sapiente neque.</li>
-            <li>Deserunt, officiis.</li>
+            {achievements.map(item => (
+              <li>{item}</li>
+            ))}
           </ul>
         </div>
 
-        <Tags />
+        <Tags data={technologies} />
 
         <div className="project-card__links">
-          <Links />
+          <Links
+            repo={repo}
+            online={online}
+          />
         </div>
       </section>
 

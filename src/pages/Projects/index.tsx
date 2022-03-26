@@ -1,4 +1,5 @@
 import { ProjectCard } from "../../components/ProjectCard";
+import { data } from "../../data";
 
 const Projects: React.FC = (): JSX.Element => {
   return(
@@ -8,8 +9,16 @@ const Projects: React.FC = (): JSX.Element => {
         <h2>Things I've built.</h2>
 
         <section className="projects__cards">
-          <ProjectCard />
-          <ProjectCard />
+          {data.projects.map(project => (
+            <ProjectCard
+              status={project.status}
+              title={project.title}
+              achievements={project.achievements}
+              technologies={project.technologies}
+              repo={project.repo}
+              online={project.online}
+            />
+          ))}
         </section>
       </section>
     </article>

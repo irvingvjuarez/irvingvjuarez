@@ -1,9 +1,13 @@
-const Tags: React.FC = (): JSX.Element => {
+interface TagsProps {
+  data: Array<string>
+}
+
+const Tags: React.FC<TagsProps> = ({ data }): JSX.Element => {
   return(
     <div className="tags">
-      <span>TypeScript</span>
-      <span>Next.js</span>
-      <span>Auth0</span>
+      {data.map(item => (
+        <span key={item}>{item}</span>
+      ))}
     </div>
   )
 }
