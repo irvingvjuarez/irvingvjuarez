@@ -47,6 +47,7 @@ const Github: React.FC = (): JSX.Element => {
               repo={repo.repo}
               online={repo.online}
               description={repo.description}
+              technologies={repo.technologies}
             />
           ))}
         </article>

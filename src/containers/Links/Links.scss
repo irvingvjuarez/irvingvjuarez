@@ -2,11 +2,22 @@
   width: fit-content;
   margin-bottom: 5px;
 
+  a{
+    margin: 0 5px;
+    display: inline-grid;
+    place-content: center;
+    padding: 3px;
+    border-radius: 50%;
+  }
+  
+  a:hover svg{
+    stroke: $default-color;
+  }
+
   svg{
     width: 22px;
     height: 22px;
-    margin: 0 5px;
     cursor: pointer;
-    stroke: $default-color;
+    stroke: $border-color;
   }
 }
