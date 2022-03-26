@@ -17,6 +17,7 @@ const Projects: React.FC = (): JSX.Element => {
               technologies={project.technologies}
               repo={project.repo}
               online={project.online}
+              img={project.img}
             />
           ))}
         </section>

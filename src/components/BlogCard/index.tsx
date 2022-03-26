@@ -6,7 +6,7 @@ const BlogCard: React.FC = (): JSX.Element => {
       <section className="blog-card__thumbnail"></section>
 
       <section className="blog-card__content">
-        <Tags />
+        <Tags data={["Education"]}/>
 
         <div  className="blog-card__description">
           <h2>Title of the article</h2>

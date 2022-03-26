@@ -1,3 +1,7 @@
+import Yardsale from "./assets/images/yardsale.jpg";
+import Weather from "./assets/images/weather.png";
+import Plugin from "./assets/images/plugin.png";
+
 const data = {
   twitter: "https://twitter.com/irvingvjuarez1",
   linkedin: "https://www.linkedin.com/in/irvingvjuarez/",
@@ -19,6 +23,7 @@ const data = {
       technologies: ["TypeScript", "SCSS", "HTML", "React.js"],
       repo: "https://github.com/irvingvjuarez/yard-sale",
       online: "https://shopping-cart-juarez.netlify.app/",
+      img: Yardsale
     },
     {
       id: 1,
@@ -33,6 +38,7 @@ const data = {
       technologies: ["Next.js", "TypeScript", "VSCode API", "Auth0"],
       repo: "https://github.com/Platzi-Master-C8/VSC-Plugins",
       online: "https://marketplace.visualstudio.com/items?itemName=GetHiredCodeTracker.gethired-code-tracker",
+      img: Plugin
     },
     {
       id: 2,
@@ -46,6 +52,7 @@ const data = {
       technologies: ["JavaScript", "React.js", "SASS", "HTML"],
       repo: "https://github.com/irvingvjuarez/weatherApp",
       online: "https://irvingjuarezweatherapp.netlify.app/",
+      img: Weather
     }
   ],
   repos: [
