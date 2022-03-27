@@ -15,6 +15,7 @@ const Blog: React.FC = (): JSX.Element => {
               title={post.title}
               description={post.description}
               tags={post.tags}
+              img={post.img}
             />
           ))}
         </section>

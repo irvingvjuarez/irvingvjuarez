@@ -10,7 +10,16 @@
   &__thumbnail{
     width: 100%;
     height: 170px;
-    background-color: $border-color;
+    background-color: $bg-dark-color;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    
+    img{
+      display: block;
+      max-width: 100%;
+      max-height: inherit;
+    }
   }
   
   &__content{
