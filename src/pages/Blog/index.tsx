@@ -23,7 +23,7 @@ const Blog: React.FC = (): JSX.Element => {
 
       </section>
 
-      <a href={data.medium} target="_blank" className="blog__cta">
+      <a href={data.medium} target="_blank" rel="noreferrer" className="blog__cta">
         See Blog
       </a>
     </article>

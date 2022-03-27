@@ -10,7 +10,7 @@ interface BlogCardProps {
 
 const BlogCard: React.FC<BlogCardProps> = ({ title, description, tags, img, url }): JSX.Element => {
   return(
-    <a className="blog-card" href={url} target="_blank">
+    <a className="blog-card" href={url} target="_blank" rel="noreferrer">
       <section className="blog-card__thumbnail">
         <img src={img} alt={title} />
       </section>

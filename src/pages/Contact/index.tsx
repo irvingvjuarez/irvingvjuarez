@@ -21,13 +21,13 @@ const Contact: React.FC = (): JSX.Element => {
         </div>
 
         <div className="contact__media">
-          <a target="_blank" href={data.linkedin} className="contact__media--linkedin" title="Linkedin">
+          <a target="_blank" rel="noreferrer" href={data.linkedin} className="contact__media--linkedin" title="Linkedin">
             <img src={Linkedin} alt="" />
           </a>
-          <a target="_blank" href={data.github} className="contact__media--github" title="Github">
+          <a target="_blank" rel="noreferrer" href={data.github} className="contact__media--github" title="Github">
             <img src={Github} alt="" />
           </a>
-          <a target="_blank" href={data.twitter} className="contact__media--twitter" title="Twitter">
+          <a target="_blank" rel="noreferrer" href={data.twitter} className="contact__media--twitter" title="Twitter">
             <img src={Twitter} alt="" />
           </a>
         </div>
@@ -38,7 +38,7 @@ const Contact: React.FC = (): JSX.Element => {
         </a>
 
         <span>
-          Designed and built by <a target="_blank" href={data.twitter} title="Irving's twitter">Irving Juárez</a>.
+          Designed and built by <a target="_blank" rel="noreferrer" href={data.twitter} title="Irving's twitter">Irving Juárez</a>.
         </span>
       </section>
 

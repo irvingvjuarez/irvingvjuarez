@@ -8,7 +8,7 @@ const Github: React.FC = (): JSX.Element => {
     <article className="github">
       <section className="github__wrapper">
 
-        <a className="github__header" href={data.github} target="_blank">
+        <a className="github__header" href={data.github} target="_blank" rel="noreferrer">
           <hr className="github__header--bar"/>
 
           <div className="github__header--profile">
@@ -53,7 +53,7 @@ const Github: React.FC = (): JSX.Element => {
         </article>
       </section>
 
-      <a target="_blank" href={data.reposUrl} className="github__cta">
+      <a target="_blank" rel="noreferrer" href={data.reposUrl} className="github__cta">
         See All
       </a>
     </article>

@@ -43,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ status, title, achievements, 
       </section>
 
       <section className="project-card__thumbnail">
-        <a href={online} target="_blank">
+        <a href={online} target="_blank" rel="noreferrer">
           <img src={img} alt={title} title={title}/>
         </a>
       </section>
