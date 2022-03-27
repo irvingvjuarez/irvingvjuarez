@@ -11,6 +11,7 @@ const Projects: React.FC = (): JSX.Element => {
         <section className="projects__cards">
           {data.projects.map(project => (
             <ProjectCard
+              key={project.id}
               status={project.status}
               title={project.title}
               achievements={project.achievements}

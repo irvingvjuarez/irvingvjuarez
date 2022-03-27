@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ status, title, achievements, 
             <h2>{title}</h2>
             <ul>
               {achievements.map(item => (
-                <li>{item}</li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
           </div>

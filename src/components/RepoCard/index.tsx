@@ -24,7 +24,7 @@ const RepoCard: React.FC<RepoCardProps> = ({ title, repo, online, description, t
 
         <div className="repo-card__tags">
           {technologies.map(technology => (
-            <span>{technology}</span>
+            <span key={technology}>{technology}</span>
           ))}
         </div>
 
