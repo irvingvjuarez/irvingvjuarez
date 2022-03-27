@@ -5,11 +5,12 @@ interface BlogCardProps {
   description: string;
   tags: Array<string>;
   img: string;
+  url: string;
 }
 
-const BlogCard: React.FC<BlogCardProps> = ({ title, description, tags, img }): JSX.Element => {
+const BlogCard: React.FC<BlogCardProps> = ({ title, description, tags, img, url }): JSX.Element => {
   return(
-    <div className="blog-card">
+    <a className="blog-card" href={url} target="_blank">
       <section className="blog-card__thumbnail">
         <img src={img} alt={title} />
       </section>
@@ -24,7 +25,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ title, description, tags, img }): J
           </p>
         </div>
       </section>
-    </div>
+    </a>
   )
 }
 

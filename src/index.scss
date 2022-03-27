@@ -20,6 +20,16 @@ $terceary-font: 'Fira Code', monospace;
   overflow: hidden;
 }
 
+@mixin imgHover {
+  position: relative;
+  transition: transform 0.5s;
+  cursor: pointer;
+
+  &:hover{
+    transform: scale(1.05)
+  }
+}
+
 @mixin reset-button {
   border: none;
   background-color: transparent;

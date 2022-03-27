@@ -1,20 +1,15 @@
 .project-card{
+  
   &__thumbnail{
-    position: relative;
+    @include imgHover;
     display: none;
     display: grid;
     place-content: center;
     background-color: $bg-dark-color;
-    cursor: pointer;
-    transition: transform 0.5s;
 
     img{
       display: block;
       width: 100%;
-    }
-
-    &:hover{
-      transform: scale(1.05)
     }
   }
 

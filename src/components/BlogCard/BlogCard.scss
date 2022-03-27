@@ -1,5 +1,8 @@
 .blog-card{
   background-color: $bg-dark-color;
+  color: $default-color;
+  text-decoration: none;
+  @include imgHover;
   
   &__description {
     h2{

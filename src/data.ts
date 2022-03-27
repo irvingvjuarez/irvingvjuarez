@@ -24,6 +24,7 @@ const data = {
       description: "We (human beings) are constantly looking for better ways to improve our work and activities in the daily basis",
       tags: ["Computer Science"],
       img: First,
+      url: "https://irvingvjuarez.medium.com/how-a-computer-works-c18bb115d2b5",
     },
     {
       id: 1,
@@ -31,6 +32,7 @@ const data = {
       description: "By the end of this tutorial, you will have the key-concepts to build a Shopping Cart App using React.js with TypeScript.",
       tags: ["React.js"],
       img: Second,
+      url: "https://irvingvjuarez.medium.com/build-a-shopping-cart-using-react-and-typescript-58d57170b4eb",
     },
     {
       id: 2,
@@ -38,6 +40,7 @@ const data = {
       description: "Obtaining a bachelor’s degree used to be a way for students to stand out from others in a highly competitive job market.",
       tags: ["Education"],
       img: Third,
+      url: "https://irvingvjuarez.medium.com/how-useful-a-bachelors-degree-is-in-2022-1811e772ad44",
     },
     {
       id: 3,
@@ -45,6 +48,7 @@ const data = {
       description: "This book is about an experiment made by the US government where 2 scientists traveled to the past to meet Jesús of Nazareth.",
       tags: ["Reading"],
       img: Fourth,
+      url: "https://irvingvjuarez.medium.com/critical-review-of-the-book-that-changed-my-life-22ab04bf080f",
     },
     {
       id: 4,
@@ -52,6 +56,7 @@ const data = {
       description: "The command line ( also known as shell, bash, console or prompt) is a powerful tool able to give orders to the Operating System or applications in our computer without a graphic user interface (GUI).",
       tags: ["Linux"],
       img: Fifth,
+      url: "https://irvingvjuarez.medium.com/understanding-command-line-in-6-minutes-d1ab7bef2da5",
     },
     {
       id: 5,
@@ -59,6 +64,7 @@ const data = {
       description: "Windows Subsystem for Linux lets developers run a GNU/Linux environment, including most command-line tools, utilities, and applications directly on Windows",
       tags: ["Wsl 2"],
       img: Sixth,
+      url: "https://irvingvjuarez.medium.com/how-to-install-windows-subsystem-for-linux-wsl-in-windows-10-9735662eed87",
     },
   ],
   projects: [
