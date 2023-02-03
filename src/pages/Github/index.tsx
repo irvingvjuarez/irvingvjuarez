@@ -1,9 +1,27 @@
 import Avatar from "../../assets/images/avatar7.jpg";
 import { RepoCard } from "../../components/RepoCard";
+import { Octokit } from "octokit";
 
 import { data } from "../../data";
+import { useEffect } from "react";
 
 const Github: React.FC = (): JSX.Element => {
+  useEffect(() => {
+    const octokit = new Octokit({
+      auth: process.env.GITHUB_API_TOKEN
+    })
+
+    const githubRequest = async () => {
+      const data = await octokit.request("GET /users/{username}", {
+        username: "irvingvjuarez"
+      })
+
+      console.log({ data })
+    }
+
+    githubRequest()
+  }, [])
+
   return(
     <article className="github">
       <section className="github__wrapper">
