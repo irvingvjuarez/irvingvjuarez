@@ -14,7 +14,7 @@ const data = {
   linkedin: "https://www.linkedin.com/in/irvingvjuarez/",
   github: "https://github.com/irvingvjuarez",
   email: "irvingjuarez274@gmail.com",
-  currentCompany: "Lyfbridge",
+  currentCompany: "Luxoft",
   reposUrl: "https://github.com/irvingvjuarez?tab=repositories",
   medium: "https://medium.com/@irvingvjuarez",
   blogposts: [
